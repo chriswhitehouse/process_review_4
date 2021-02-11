@@ -3,14 +3,14 @@ def string_calculator(string)
   result = 0
   operator = ''
 
-  input_array.each_with_index do |val, index |
+  input_array.each_with_index do |val, index|
     if index == 0
-      result = val.to_i
+      result = val.to_f
     else
       if index.odd?
         operator = val
       else
-        result = result.send(operator, val.to_i)
+        result = result.send(operator, val.to_f)
       end
     end
   end
