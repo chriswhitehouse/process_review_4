@@ -12,4 +12,8 @@ describe '#string_calculator' do
   it "receive '4 + 5 + 6'  and return ['4 + 5 + 6' , 15]" do
     expect(string_calculator('4 + 5 + 6')).to eq ['4 + 5 + 6' , 15]
   end
+
+  it "receive '8 - 7'  and return ['8 - 7' , 1]" do
+    expect(string_calculator('8 - 7')).to eq ['8 - 7' , 1]
+  end
 end
